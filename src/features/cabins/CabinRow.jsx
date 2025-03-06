@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { HiPencil, HiTrash, HiSquare2Stack } from "react-icons/hi2";
 
-import Button from "../../ui/Button";
 import CreateCabinForm from "./CreateCabinForm";
 import Table from "../../ui/Table";
 import ConfirmDelete from "../../ui/ConfirmDelete";
