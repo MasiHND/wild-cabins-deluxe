@@ -78,13 +78,14 @@ function CabinRow({ cabin }) {
         )}
         <div>
           <Modal>
-            <Menus.Menu>
               <Menus.Toggle id={cabinId} />
+            <Menus.Menu>
 
               <Menus.List id={cabinId}>
                 <Menus.Button
                   icon={<HiSquare2Stack />}
                   onClick={handleDuplicate}
+                  disabled={isCreating}
                 >
                   Duplicate
                 </Menus.Button>
