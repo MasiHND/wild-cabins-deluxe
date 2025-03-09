@@ -7,7 +7,7 @@ import Table from "../../ui/Table";
 
 import { formatCurrency } from "../../utils/helpers";
 import { formatDistanceFromNow } from "../../utils/helpers";
-import { HiEye } from "react-icons/hi2";
+import { HiEye, HiMiniArrowRightEndOnRectangle } from "react-icons/hi2";
 import { useNavigate } from "react-router-dom";
 
 const Cabin = styled.div`
@@ -94,6 +94,13 @@ function BookingRow({
           >
             See Details
           </Menus.Button>
+
+          {status === "unconfirmed" && <Menus.Button
+            icon={<HiMiniArrowRightEndOnRectangle />}
+            onClick={() => navigate(`/checkin/${bookingId}`)}
+          >
+            Check In
+          </Menus.Button>}
         </Menus.List>
       </Menus.Menu>
     </Table.Row>
