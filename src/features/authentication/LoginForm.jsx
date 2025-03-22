@@ -32,7 +32,9 @@ function LoginForm() {
         />
       </FormRow>
       <FormRow orientation="vertical">
-        <Button size="large">Login</Button>
+        <Button variation="primary" size="large">
+          Login
+        </Button>
       </FormRow>
     </Form>
   );
