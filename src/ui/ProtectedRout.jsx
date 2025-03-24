@@ -12,18 +12,18 @@ const FullPage = styled.div`
   height: 100vh;
 `;
 function ProtectedRout({ children }) {
-  const { isLoading, isAuthenticated } = useUser();
+  const { isPending, isAuthenticated } = useUser();
 
   const navigate = useNavigate();
 
   useEffect(
     function () {
-      if (!isAuthenticated && !isLoading) navigate("/login");
+      if (!isAuthenticated && !isPending) navigate("/login");
     },
-    [isAuthenticated, isLoading, navigate]
+    [isAuthenticated, isPending, navigate]
   );
 
-  if (isLoading)
+  if (isPending)
     return (
       <FullPage>
         <Spinner />
