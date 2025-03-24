@@ -12,7 +12,7 @@ const Img = styled.img`
 function Logo() {
   return (
     <StyledLogo>
-      <Img src="/ArnikaTDR-Logo.png" alt="Logo" />
+      <Img src="/logo-light.png" alt="Logo" />
     </StyledLogo>
   );
 }
