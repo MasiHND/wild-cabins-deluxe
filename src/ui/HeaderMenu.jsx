@@ -14,13 +14,13 @@ function HeaderMenu() {
   return (
     <StyledHeaderMenu>
       <li>
-        <ButtonIcon onClick={() => navigate("/account")}>
-          <HiOutlineUser />
-        </ButtonIcon>
+        <Logout />
       </li>
 
       <li>
-        <Logout />
+        <ButtonIcon onClick={() => navigate("/account")}>
+          <HiOutlineUser />
+        </ButtonIcon>
       </li>
     </StyledHeaderMenu>
   );

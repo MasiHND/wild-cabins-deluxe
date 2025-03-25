@@ -8,7 +8,7 @@ const StyledHeader = styled.header`
   border-bottom: 1px solid var(--color-grey-100);
 
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   gap: 2.4rem;
 `;
@@ -16,8 +16,8 @@ const StyledHeader = styled.header`
 function Header() {
   return (
     <StyledHeader>
-      <HeaderMenu />
       <UserAvatar />
+      <HeaderMenu />
     </StyledHeader>
   );
 }
