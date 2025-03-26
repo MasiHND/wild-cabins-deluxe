@@ -1,5 +1,5 @@
 import ButtonIcon from "../../ui/ButtonIcon"
-import { HiArrowLeftStartOnRectangle } from "react-icons/hi2";
+import { HiArrowRightStartOnRectangle } from "react-icons/hi2";
 import { useLogOut } from "./useLogOut";
 import SpinnerMini from "../../ui/SpinnerMini";
 
@@ -8,7 +8,7 @@ function Logout() {
 
     return (
       <ButtonIcon disabled={isPending} onClick={logout}>
-        {!isPending ? <HiArrowLeftStartOnRectangle /> : <SpinnerMini/>}
+        {!isPending ? <HiArrowRightStartOnRectangle /> : <SpinnerMini/>}
       </ButtonIcon>
     );
 }
